@@ -1,5 +1,5 @@
 {
-  "name": "node-freshbooks-api",
+  "name": "freshbooks-api",
   "version": "0.1.2",
   "description": "Node.js wrapper for the FreshBooks (www.freshbooks.com) API",
   "main": "index.js",
