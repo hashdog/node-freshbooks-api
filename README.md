@@ -10,7 +10,7 @@ The author of https://github.com/prattsj/freshbooksjs has not maintain module fo
 
 ### Installation
 
-    npm install freshbooksjs
+    npm install freshbooks-api
 
 
 ### tl;dr
@@ -29,7 +29,7 @@ The author of https://github.com/prattsj/freshbooksjs has not maintain module fo
 
 Get all invoices for the user:
 ```javascript
-var FreshBooks = require('freshbooksjs');
+var FreshBooks = require('freshbooks-api');
 var freshbooks = new FreshBooks('USER_URL', 'USER_TOKEN');
 
 freshbooks.estimate.list(function(error, estimates) {
@@ -81,13 +81,13 @@ http://developers.freshbooks.com/authentication-2/
 
 Authenticating is easy. Pass in strings with the user's API URL and token when creating a client:
 ```javascript
-var FreshBooks = require('freshbooksjs');
+var FreshBooks = require('freshbooks-api');
 var freshbooks = new FreshBooks('USER_URL', 'USER_TOKEN');
 ```
 
 Change the token at any time. Note that this will affect & auto-update the token for any "sub-services" (for clients, time entries, etc.) accessed via this client instance:
 ```javascript
-var FreshBooks = require('freshbooksjs');
+var FreshBooks = require('freshbooks-api');
 var freshbooks = new FreshBooks();
 
 /* stuff happens... */
