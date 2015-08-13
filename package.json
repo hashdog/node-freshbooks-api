@@ -1,0 +1,33 @@
+{
+  "name": "node-freshbooks-api",
+  "version": "0.1.2",
+  "description": "Node.js wrapper for the FreshBooks (www.freshbooks.com) API",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hashdog/node-freshbooks-api.git"
+  },
+  "keywords": [
+    "freshbooks"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hashdog/node-freshbooks-api/issues"
+  },
+  "homepage": "https://github.com/hashdog/node-freshbooks-api#readme",
+  "dependencies": {
+    "request": "^2.60.0",
+    "xml2js": "^0.4.10"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
