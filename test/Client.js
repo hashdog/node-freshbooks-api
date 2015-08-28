@@ -91,6 +91,25 @@ describe('Client', function() {
         });
     });
 
+    describe('list() with pagination', function () {
+        it('should list page 2 of client data', function (done) {
+            var pagination = {
+                page: 2,
+                per_page: 10,
+                folder: 'active'
+            };
+            fb.client.list(pagination, function (err, clients, metaData) {
+                if (!err) {
+                    assert.ok(Array.isArray(clients) && clients.length && clients[0].client_id, 'client.list should return a non-empty client array');
+                    assert.ok(metaData.page === "2");
+                    done(null);
+                } else {
+                   done(err);
+                }
+            });
+        });
+    });
+
     describe('delete()', function() {
         this.timeout(30000);
         it('should delete a client w/o error', function(done) {
