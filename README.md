@@ -110,7 +110,7 @@ $ make test
 ### Complete FreshBooks API Documentation
 
 http://developers.freshbooks.com/
-
+Test on [RapidAPI](https://rapidapi.com/package/FreshbooksAPI/functions?utm_source=FreshbooksGitHub&utm_medium=button)
 
 
 ### Roadmap
